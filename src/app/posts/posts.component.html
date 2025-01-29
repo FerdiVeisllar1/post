@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Posts and Authors</h2>
+  <div *ngFor="let post of combinedData" class="post-card">
+   <a [routerLink]="['/posts/',post.id]" > <h3>{{ post.title }}</h3> </a>
+
+
+    <p>{{post.id}}</p>
+
+    <p><strong>Author:</strong> {{ post.authorName }}</p>
+  </div>
+</div>
+<router-outlet/>

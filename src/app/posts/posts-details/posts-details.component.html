@@ -1,0 +1,11 @@
+
+<div class="container">
+  <button routerLink="/" class="btn-back">⬅ Back</button>
+  <h2>{{ post?.title }}</h2>
+  <p>{{ post?.body }}</p>
+  <a [routerLink]="['/users']" routerLinkActive="router-link-active">Author:{{ author?.name }}</a>
+  <p><strong>Email:</strong> {{ author?.email }}</p>
+  <p><strong>Company:</strong> {{ author?.company?.name }}</p>
+</div>
+
+

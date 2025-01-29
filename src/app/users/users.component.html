@@ -1,0 +1,15 @@
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>Authors ID</th>
+        <th>Authors Name</th>
+        <th>Authors Email</th>
+      </tr></thead>
+    <tr class="place-item" *ngFor="let user of users">
+      <td> <strong>{{user.id}}</strong></td>
+        <td> <a [routerLink]="['/users/',user.id]" ><strong>{{ user.name }}</strong></a></td>
+      <td> <strong>{{ user.email }}</strong></td>
+      </tr>
+  </table>
+</div>
